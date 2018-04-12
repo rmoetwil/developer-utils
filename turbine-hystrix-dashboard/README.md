@@ -20,8 +20,11 @@ http(s)://host:management-port/{context}/hystrix.stream
 You can verify the url when running your app.
 If you are seeing data being returned (even if it's only a ping message) it's fine.
 
+After you have entered the endpoint in the dashboard you should either see a `loading` message or some graphs.
+Graphs are only visible if your hystrix enabled code has been executed.
 
 #####Note
 When entering the url of the hystrix.stream you can't use localhost but need to use the ip of your machine.
 E.g.:
 http://172.26.190.154:9190/hystrix.stream
+
